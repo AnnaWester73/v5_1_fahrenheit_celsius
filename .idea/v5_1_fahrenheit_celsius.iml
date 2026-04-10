@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$/../v5_1_fahrenheit_celsius">
       <excludeFolder url="file://$MODULE_DIR$/../v5_1_fahrenheit_celsius/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.14 (v5_1_farenheit_celsius)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.14 (.venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
