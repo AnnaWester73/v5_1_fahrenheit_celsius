@@ -1,21 +1,26 @@
 from behave import given, when, then
+from src.temperature import fahrenheit_to_celsius, celsius_to_fahrenheit
 
 
 @given('temperaturen är {value:g} Fahrenheit')
 def step_given_fahrenheit(context, value):
     context.value = value
 
+
 @given('temperaturen är {value:g} Celsius')
 def step_given_celsius(context, value):
     context.value = value
 
+
 @when("temperaturen omvandlas till Fahrenheit")
 def step_when_to_fahrenheit(context):
-    context.result = context.value * 9 / 5 + 32
+    context.result = celsius_to_fahrenheit(context.value)
+
 
 @when("temperaturen omvandlas till Celsius")
 def step_when_to_celsius(context):
-    context.result = (context.value - 32) * 5 / 9
+    context.result = fahrenheit_to_celsius(context.value)
+
 
 @then('ska resultatet vara {expected:g} Celsius')
 def step_then_celsius(context, expected):

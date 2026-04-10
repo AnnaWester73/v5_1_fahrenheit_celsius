@@ -1,5 +1,6 @@
-def fahrenheit_to_celsius(fahrenheit: float) -> float:
-    pass
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5 / 9
 
-def celsius_to_fahrenheit(celsius: float) -> float:
-    pass
+
+def celsius_to_fahrenheit(celsius):
+    return celsius * 9 / 5 + 32
